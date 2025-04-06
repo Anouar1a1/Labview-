@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Labview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .scale-in {
+      animation: scaleIn 1s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-pink-200 to-yellow-100 shadow-md slide-in">
+    <div class="flex items-center space-x-2">
+      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center"><img src="images/lablogo.png"></img></div>
+      <span class="text-lg font-semibold">Labview</span>
+    </div>
+    <div class="flex space-x-4">
+      <a href="home.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Home</a>
+      <a href="login.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Login/sign in</a>
+      <a href="about.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">About</a>
+      <a href="contact.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="relative flex flex-col items-center justify-center px-6 py-10 text-center">
+   <!-- Background Circle Layers -->
+   <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gray-200 rounded-full flex items-center z-0 "></div>
+   <div class="absolute top-24 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-pink-200 rounded-full flex z-0scale-in z-0 delay-200"></div>
+   <div id="logo" class="absolute top-32 left-1/2 transform -translate-x-1/2 w-48 h-48 bg-blue-300 rounded-full z-0 flex items-center justify-center  text-4xl delay-300">
+     <img src="images/lablogo.png" />
+   </div>
+
+    <!-- Contact Section -->
+    <div class="relative z-10 max-w-xl mt-20 fade-in-up delay-500">
+      <h2 class="text-purple-600 text-xl font-bold mb-4">Contact us:</h2>
+      <p class="text-black text-lg leading-relaxed">
+        If you have any questions, suggestions, or feedback, feel free to contact our team via email or phone. <br />
+        We’re happy to hear from you!
+      </p>
+
+      <div class="mt-6 space-y-4 text-left text-md">
+        <p><strong>Email:</strong> <a href="mailto:gmail.com" class="text-blue-600 hover:underline">gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+212612345678" class="text-blue-600 hover:underline">+212 6 12 34 56 78</a></p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

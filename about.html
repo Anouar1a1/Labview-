@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Labview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .scale-in {
+      animation: scaleIn 1s ease-out forwards;
+    }
+
+    .bounce-in {
+      animation: bounce 1s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-pink-200 to-yellow-100 shadow-md slide-in">
+    <div class="flex items-center space-x-2">
+      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center"><img src="images/lablogo.png"></img></div>
+      <span class="text-lg font-semibold">Labview</span>
+    </div>
+    <div class="flex space-x-4">
+      <a href="home.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Home</a>
+      <a href="login.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Login/sign in</a>
+      <a href="about.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">About</a>
+      <a href="contact.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="relative flex flex-col items-center justify-center px-6 py-10 text-center">
+    <!-- Background Circle Layers -->
+    <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gray-200 rounded-full flex items-center z-0 "></div>
+    <div class="absolute top-24 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-pink-200 rounded-full flex z-0scale-in z-0 delay-200"></div>
+    <div id="logo" class="absolute top-32 left-1/2 transform -translate-x-1/2 w-48 h-48 bg-blue-300 rounded-full z-0 flex items-center justify-center  text-4xl delay-300">
+      <img src="images/lablogo.png" />
+    </div>
+
+
+    <!-- Text -->
+    <div class="relative z-10 max-w-xl mt-20 fade-in-up delay-500">
+      <h2 class="text-purple-600 text-xl font-bold mb-4">About:</h2>
+      <p class="text-black text-lg leading-relaxed">
+        This website was made by <strong>The Night Knights</strong>, a group founded by friends called 
+        <span class="text-purple-600 font-semibold">Ait Ouflih Anouar</span>, 
+        <span class="text-pink-600 font-semibold">El Bariq Mouad</span>, and 
+        <span class="text-blue-600 font-semibold">El Idrissi Abdellah</span> 
+        to participate in the <strong>Medtech competition</strong> at ENSA Marrakech.
+      </p>
+    </div>
+  </main>
+
+  <!-- Contact Bubble -->
+  <div class="fixed bottom-6 right-6 flex flex-col items-end space-y-2 animate-pulse">
+    <button class="px-4 py-2 bg-yellow-200 rounded-full shadow hover:bg-yellow-300 text-sm"><a href="contact.html">Contact us 📞</a></button>
+  </div>
+
+</body>
+</html>
