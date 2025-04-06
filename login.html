@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login - Labview</title>
+  <link rel="icon" href="images/lablogo.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeInUp {
@@ -21,19 +22,19 @@
   </style>
 </head>
 <body class="bg-white font-sans overflow-x-hidden">
-
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-pink-200 to-yellow-100 shadow-md fade-in-up">
+  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-200 to-grey-100 shadow-md slide-in z-20 relative">
     <div class="flex items-center space-x-2">
-      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center"> <img src="images/lablogo.png"></div>
+      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center">
+        <a href="home.html"><img src="images/lablogo.png" alt="Labview Logo" class="w-8 h-8" /></a>
+      </div>
       <span class="text-lg font-semibold">Labview</span>
     </div>
     <div class="flex space-x-4">
-      <a href="home.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Home</a>
-      <a href="login.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Login/sign in</a>
-      <a href="about.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">About</a>
-      <a href="contact.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Contact us</a>
+      <a href="home.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Home</a>
+      <a href="login.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Login/Sign In</a>
+      <a href="about.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">About</a>
     </div>
+  </nav>
   </nav>
 
   <!-- Main Content -->
@@ -46,14 +47,14 @@
     <div class="relative z-10 mt-10 bg-white border-2 border-black rounded-xl p-6 w-full max-w-md fade-in-up space-y-4">
       <div class="flex justify-between items-center">
         <h2 class="text-2xl font-bold text-left">Login:</h2>
-        <span class="bg-gradient-to-r from-yellow-200 to-pink-200 text-black px-4 py-1 rounded-full text-sm">Welcome again</span>
+        <span class="bg-gradient-to-r from-blue-200 to-violet-200 text-black px-4 py-1 rounded-full text-sm">Welcome again</span>
       </div>
 
       <form class="space-y-4">
         <div class="text-left">
           <label for="username" class="block font-semibold">Username:</label>
           <input type="text" id="username" placeholder="Example.iso"
-            class="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:ring-2 focus:ring-pink-300"/>
+            class="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:ring-2 focus:ring-blue-300"/>
         </div>
 
         <div class="text-left">
@@ -66,14 +67,14 @@
           You have forgot your password, <a href="#" class="text-blue-600 underline">click here</a>
         </p>
 
-        <button type="submit" class="w-full bg-gradient-to-r from-yellow-200 to-pink-300 py-2 rounded-full font-semibold hover:opacity-90 transition">
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-200 to-violet-300 py-2 rounded-full font-semibold hover:opacity-90 transition">
           Login
         </button>
       </form>
 
       <div class="flex justify-between items-center text-sm pt-2">
         <span>Is it your first time?</span>
-        <a href="signup.html" class="bg-gradient-to-r from-yellow-200 to-pink-300 px-4 py-1 rounded-full font-semibold hover:opacity-90 transition">Sign in</a>
+        <a href="signup.html" class="bg-gradient-to-r from-cyan-200 to-violet-300 px-4 py-1 rounded-full font-semibold hover:opacity-90 transition">Sign in</a>
       </div>
     </div>
   </main>
