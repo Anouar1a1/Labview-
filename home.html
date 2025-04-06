@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Labview</title>
+  <link rel="icon" href="images/lablogo.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeInUp {
@@ -57,20 +58,17 @@
   </style>
 </head>
 <body class="bg-white font-sans overflow-x-hidden">
-
-  <!-- 🌈 Navbar -->
-  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-pink-200 to-yellow-100 shadow-md slide-in z-20 relative">
+  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-200 to-grey-100 shadow-md slide-in z-20 relative">
     <div class="flex items-center space-x-2">
       <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center">
-        <img src="images/lablogo.png" alt="Labview Logo" class="w-8 h-8" />
+        <a href="home.html"><img src="images/lablogo.png" alt="Labview Logo" class="w-8 h-8" /></a>
       </div>
       <span class="text-lg font-semibold">Labview</span>
     </div>
     <div class="flex space-x-4">
-      <a href="home.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Home</a>
-      <a href="login.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Login/Sign In</a>
-      <a href="about.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">About</a>
-      <a href="contact.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200">Contact Us</a>
+      <a href="home.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Home</a>
+      <a href="login.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Login/Sign In</a>
+      <a href="about.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">About</a>
     </div>
   </nav>
 
@@ -80,16 +78,6 @@
       <source src="images/3195727-hd_1280_720_25fps.mp4" type="video/mp4" />
     </video>
   </div>
-
-  <!-- 🌐 Language Switcher -->
-  <div class="absolute top-4 right-4 z-10">
-    <select id="languageSelect" class="bg-white text-sm px-3 py-1 rounded shadow">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="fr">Français</option>
-    </select>
-  </div>
-
   <!-- 🔬 Hero Section -->
   <section class="relative z-10 text-center py-32 px-4 min-h-screen flex flex-col justify-center items-center">
     <h1 class="text-4xl md:text-6xl font-bold text-purple-800 mb-4 lang"
@@ -103,6 +91,14 @@
        data-fr="Analyse de santé alimentée par l'IA, simplifiée.">
       AI-powered health analysis made simple.
     </p>
+
+    <a href="testanalysis.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-600 transition lang"
+       data-en="View Your Test" data-ar="عرض اختبارك" data-fr="Voir votre test">View Your Test</a>
+  </section>
+</body>
+</html>
+
+
 
     <a href="testanalysis.html" class="bg-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition lang"
        data-en="View Your Test" data-ar="عرض اختبارك" data-fr="Voir votre test">View Your Test</a>
