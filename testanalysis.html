@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Analysis - Labview</title>
+  <link rel="icon" href="images/lablogo.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes float {
@@ -19,19 +20,18 @@
     .glow { animation: pulse-glow 2.5s infinite; }
   </style>
 </head>
-<body class="bg-white font-sans min-h-screen flex flex-col overflow-x-hidden">
-
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-pink-200 to-yellow-100 shadow-md">
+<body class="bg-white font-sans overflow-x-hidden">
+  <nav class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-200 to-grey-100 shadow-md slide-in z-20 relative">
     <div class="flex items-center space-x-2">
-      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center text-xl"><img src="images/lablogo.png"></div>
-      <span class="text-lg font-bold text-gray-700">Labview</span>
+      <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center">
+        <a href="home.html"><img src="images/lablogo.png" alt="Labview Logo" class="w-8 h-8" /></a>
+      </div>
+      <span class="text-lg font-semibold">Labview</span>
     </div>
-    <div class="flex space-x-4 text-sm font-medium">
-      <a href="home.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-300 transition">Home</a>
-      <a href="login.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-300 transition">Login/Sign in</a>
-      <a href="about.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-300 transition">About</a>
-      <a href="contact.html" class="px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-300 transition">Contact</a>
+    <div class="flex space-x-4">
+      <a href="home.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Home</a>
+      <a href="login.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">Login/Sign In</a>
+      <a href="about.html" class="px-4 py-2 rounded-full bg-cyan-100 hover:bg-blue-200">About</a>
     </div>
   </nav>
 
@@ -48,36 +48,32 @@
     <!-- Test Cards Grid -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
       <!-- Test Card -->
-      <div class="bg-gradient-to-r from-yellow-100 to-pink-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 glow">
+      <div class="bg-gradient-to-r from-grey-100 to-cyan-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 glow">
         <h3 class="font-bold text-xl text-gray-800 mb-2">Test 1: Blood Analysis</h3>
         <p class="text-sm text-gray-600 mb-4">Ready for download and review</p>
         <div class="flex justify-between items-center">
-          <a href="#" class="text-pink-600 font-semibold hover:underline">View Result →</a>
-          <button onclick="window.print()" class="text-sm px-3 py-1 bg-pink-400 text-white rounded-full hover:bg-pink-500">PDF</button>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">View Result →</a>
+          <button onclick="window.print()" class="text-sm px-3 py-1 bg-black-400 text-white rounded-full hover:bg-cyan-500">PDF</button>
         </div>
       </div>
-
-      <!-- Add more cards easily -->
-      <div class="bg-gradient-to-r from-yellow-100 to-pink-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
-        <h3 class="font-bold text-xl text-gray-800 mb-2">Test 2:diabethies test</h3>
-        <p class="text-sm text-gray-600 mb-4">Reviewed by AI and ready</p>
+      <div class="bg-gradient-to-r from-grey-100 to-cyan-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 glow">
+        <h3 class="font-bold text-xl text-gray-800 mb-2">Test 1: Blood Analysis</h3>
+        <p class="text-sm text-gray-600 mb-4">Ready for download and review</p>
         <div class="flex justify-between items-center">
-          <a href="#" class="text-pink-600 font-semibold hover:underline">View Result →</a>
-          <button onclick="window.print()" class="text-sm px-3 py-1 bg-pink-400 text-white rounded-full hover:bg-pink-500">PDF</button>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">View Result →</a>
+          <button onclick="window.print()" class="text-sm px-3 py-1 bg-black-400 text-white rounded-full hover:bg-cyan-500">PDF</button>
         </div>
       </div>
-      <div class="bg-gradient-to-r from-yellow-100 to-pink-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
-        <h3 class="font-bold text-xl text-gray-800 mb-2">Test 3:Blood test</h3>
-        <p class="text-sm text-gray-600 mb-4">Reviewed by AI and ready</p>
+      <div class="bg-gradient-to-r from-grey-100 to-cyan-100 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 glow">
+        <h3 class="font-bold text-xl text-gray-800 mb-2">Test 1: Blood Analysis</h3>
+        <p class="text-sm text-gray-600 mb-4">Ready for download and review</p>
         <div class="flex justify-between items-center">
-          <a href="#" class="text-pink-600 font-semibold hover:underline">View Result →</a>
-          <button onclick="window.print()" class="text-sm px-3 py-1 bg-pink-400 text-white rounded-full hover:bg-pink-500">PDF</button>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">View Result →</a>
+          <button onclick="window.print()" class="text-sm px-3 py-1 bg-black-400 text-white rounded-full hover:bg-cyan-500">PDF</button>
         </div>
       </div>
-
     </div>
   </main>
 
 </body>
 </html>
-
